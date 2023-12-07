@@ -1,10 +1,15 @@
+const scroll = new LocomotiveScroll({
+    el: document.querySelector('.main'),
+    smooth: true
+});
+
 function videoAnimation() {
     let videocon = document.querySelector(".main__videoContainer")
     let playCurser = document.querySelector(".main__curser")
 
     videocon.addEventListener("mouseenter", () => {
         gsap.to(playCurser, {
-            scale: 0.7,
+            scale: 1,
             opacity: 1
         })
     })
@@ -18,8 +23,8 @@ function videoAnimation() {
 
     videocon.addEventListener("mousemove", (dets) => {
         gsap.to(playCurser, {
-            left: dets.x - 50,
-            top: dets.y - 40
+            left: dets.x-50,
+            top: dets.y-40
         })
     })
 }
@@ -29,8 +34,9 @@ videoAnimation()
 
 function loadingAnimation() {
     gsap.from(".main__pageOne h1", {
-        opacity: 0,
+        
         y: 100,
+        opacity: 0,
         delay: 0.5,
         duration: 0.9,
         stagger: 0.3
@@ -45,4 +51,6 @@ function loadingAnimation() {
 }
 
 loadingAnimation()
+
+
 
