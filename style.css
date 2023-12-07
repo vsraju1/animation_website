@@ -1,3 +1,59 @@
-body{
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy', sans-serif;
+}
+*::selection{
+    color: white;
     background-color: black;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+.main__pageOne{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    padding: 0 1vw;
+    margin-top: 200px;
+}
+
+.main__pageOne > h1{
+    text-align: center;
+    font-family: futura, sans-serif;
+    text-transform: uppercase;
+    font-size: 14vw;
+    letter-spacing: -14px;
+    line-height: 14vw;
+    font-weight: 800;
+}
+
+.main__videoContainer{
+    height: 100vh;
+    width: 100%;
+    background-color: grey;
+    position: relative;
+}
+
+.main__videoContainer > video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.main__videoContainer > .main__curser{
+    padding: 3vw 2vw;
+    background-color: black;
+    position: fixed;
+    color: #fff;
+    font-size: 1.3vw;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    border-radius: 50%;
+    opacity: 0;
+    scale: 0;
 }
