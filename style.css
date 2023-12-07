@@ -79,6 +79,10 @@ html, body{
     width: 31%;
     /* background-color: red; */
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
 
 .main__pageTwo .elem img{
@@ -86,6 +90,20 @@ html, body{
     width: 100%;
     object-fit: cover;
     scale: 1.1;
+}
+ 
+.elem .elem__dets{
+    width: 70%;
+    height: 60px;
+    border-radius: 70px;
+    z-index: 9;
+    position: absolute;
+    background-color: palegoldenrod;
+    opacity: 0.5;
+    transition: all ease-out 0.3s;
+}
+.elem .elem__dets:hover{
+    height: 40%;
 }
 
 .main__pageThree{
