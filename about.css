@@ -1,0 +1,185 @@
+/* This will affect the scrollbar globally */
+::-webkit-scrollbar {
+    width: 5px; /* width of the entire scrollbar */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: rgb(24, 24, 24); /* color of the tracking area */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #888; /* color of the scroll thumb */
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; /* color of the scroll thumb on hover */
+  }
+
+
+
+.side__heading {
+    font-size: 10px;
+    font-weight: 600;
+    color: green;
+    padding:8px 0;
+}
+hr{
+    height: 1px;
+    max-width: 100%;
+    margin: 0 10px;
+    color: grey;
+    font-weight: 100;
+    z-index: 99;
+}
+
+.main__about{
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); */
+    color: white;
+    margin:50px auto;
+    width: 50%;
+    height: 80vh;
+    background-color: rgb(24, 24, 24);
+}
+
+.main__about a{
+    color: white;
+}
+
+.main__about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 5px; */
+}
+.main__content{
+    background-color: rgb(26, 25, 25);
+    height: 100%;
+    width: 100%;
+    /* padding: 0 10px; */
+    text-align: center;
+    /* border: 1px solid white; */
+}
+.content__one{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 12px;
+}
+.content__one .content__items{
+    padding: 10px 15px;
+}
+.content__one .content__links{
+    display: flex;
+    flex-direction: column;
+    font-size: 8px;
+    height: 40%;
+    justify-content: space-evenly;
+    /* border: 1px solid white; */
+}
+.content__one #menuIcon{
+    height: 22px;
+    width: 22px;
+    font-weight: bold;
+}
+.content__one #menu{
+    background-color: green;
+}
+#menu > svg{
+    color: black;
+}
+
+.content__two{
+    width: 65%;
+}
+.content__two{
+    background-image: url("./profile.png");
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.content__two{
+    height: 110%;
+    z-index: 1;
+    display: flex;
+    align-items: end;
+    box-shadow: 0 0 12px black;
+}
+.content__twoInfo{
+    width: 100%;
+    height: auto;
+    padding: 10px 0;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: black;
+}
+.content__two h4{
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.content__two ul > li{
+    font-size: 8px;
+    
+}
+.content__two #profile__links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+.content__three{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    
+}
+.content__three .three__child{
+    width: 100%;
+    max-height: 50%;
+    padding: 10px;
+    padding-left: 1.3rem;
+    text-align: left;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+}
+
+.about__description{
+    font-size: 12px;
+    font-weight: lighter;
+}
+.skills__grid{
+    width: 100%;
+    height: 90%;
+    margin-top: 20px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 25px;
+}
+
+.skills__grid .grid__child > svg{
+    height: 20px;
+    width: 20px;
+}
+
+.skills__grid .grid__child > h4{
+    font-size: 14px;
+    font-weight: 700;
+    padding: 5px 0;
+}
+.skills__grid .grid__child > p{
+    font-size: 10px;
+    font-weight: 100;
+}
